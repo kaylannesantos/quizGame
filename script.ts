@@ -39,7 +39,7 @@ function quizGame(): void {
             console.log('Resposta incorreta!');
         }
     }
-    console.log(`Você fez ${score} de ${questions.length} corretamente.`);
+    console.log(`Você fez ${score} ponto(s) de ${questions.length} questões corretamente.`);
 }
 
 quizGame();
