@@ -1,4 +1,5 @@
-
+import prompt from 'prompt-sync';
+const input = prompt();
 
 type Question = {
     question: string;
@@ -30,7 +31,7 @@ function quizGame(): void {
             console.log(`${index + 1}. ${choice}`);
         });
 
-        const answerIndex = parseInt(prompt('Escolha sua resposta (1-3): '));
+        const answerIndex = parseInt(input('Escolha sua resposta (1-3): '));
         if (question.choices[answerIndex - 1] == question.answer) {
             console.log('Resposta correta!');
             score++;
