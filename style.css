@@ -1,0 +1,21 @@
+body{
+    width: 500px;
+    margin: 0 auto;
+    background: url(quizGame3.jpg);
+    background-size: cover;
+}
+
+.game-quiz-container {
+    width: 500px;
+    height: 600px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgb(98, 101, 104);
+    border-radius: 15px
+}
+
+.game-quiz-container h2{
+    text-align: center;
+}

@@ -10,7 +10,7 @@ type Question = {
 const questions: Question [] = [
 {
     question: 'Qual o resultado da operação: 2 + 2 ?',
-    choices: ['4', '10', '22'],
+    choices: ['6', '4', '22'],
     answer: '4',
 },
 {
@@ -39,7 +39,7 @@ function quizGame(): void {
             console.log('Resposta incorreta!');
         }
     }
-    console.log(`Você fez ${score} ponto(s) de ${questions.length} questões corretamente.`);
+    console.log(`Você fez ${score} ponto(s).`);
 }
 
 quizGame();
