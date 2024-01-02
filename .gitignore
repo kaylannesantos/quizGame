@@ -1,0 +1,11 @@
+# arq. temporários
+*.tmp
+
+# pasta de dependências
+node_modules/
+
+# arq. de configuração typescript
+tsconfig.json
+
+# arq. .json
+*.json
