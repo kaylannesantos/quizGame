@@ -2,44 +2,44 @@ import prompt from 'prompt-sync';
 const input = prompt();
 
 type Question = {
-    question: string;
-    choices: string[];
-    answer: string;
+    questao: string;
+    perguntas: string[];
+    resposta: string;
 };
 
-const questions: Question [] = [
+const questoes: Question [] = [
 {
-    question: 'Qual o resultado da operação: 2 + 2 ?',
-    choices: ['6', '4', '22'],
-    answer: '4',
+    questao: 'Qual o resultado da operação: 2 + 2 ?',
+    perguntas: ['6', '4', '22'],
+    resposta: '4',
 },
 {
-    question: 'Qual a pior linguagem de programação?',
-    choices: ['Javascript', 'Java', 'html'],
-    answer: 'Java',
+    questao: 'Qual a pior linguagem de programação?',
+    perguntas: ['Javascript', 'Java', 'html'],
+    resposta: 'Java',
 },
 ];
 
 function quizGame(): void {
-    let score = 0;
+    let pontuacao = 0;
 
-    for (let i = 0; i < questions.length; i++) {
-        let question = questions[i];
+    for (let i = 0; i < questoes.length; i++) {
+        let question = questoes[i];
 
-        console.log(question.question);
-        question.choices.forEach((choice, index) => {
+        console.log(question.questao);
+        question.perguntas.forEach((choice, index) => {
             console.log(`${index + 1}. ${choice}`);
         });
 
         const answerIndex = parseInt(input('Escolha sua resposta (1-3): '));
-        if (question.choices[answerIndex - 1] == question.answer) {
+        if (question.perguntas[answerIndex - 1] == question.resposta) {
             console.log('Resposta correta!');
-            score++;
+            pontuacao++;
         } else {
             console.log('Resposta incorreta!');
         }
     }
-    console.log(`Você fez ${score} ponto(s).`);
+    console.log(`Você fez ${pontuacao} ponto(s).`);
 }
  
 quizGame();
