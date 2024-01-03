@@ -41,5 +41,5 @@ function quizGame(): void {
     }
     console.log(`Você fez ${score} ponto(s).`);
 }
-
+ 
 quizGame();
