@@ -1,2 +1,2 @@
-## quizGame
-🎮 Jogo de Perguntas e Respostas 
+### quizGame - Jogo de Perguntas e Respostas 🎮
+---
